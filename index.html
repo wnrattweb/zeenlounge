@@ -1,129 +1,46 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]> <html lang="en" class="no-js ie6"> <![endif]-->
-<!--[if IE 7]>    <html lang="en" class="no-js ie7"> <![endif]-->
-<!--[if IE 8]>    <html lang="en" class="no-js ie8"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class='no-js' lang='tr'>
-	<!--<![endif]-->
-	<head>
-		<meta charset='utf-8' />
-		<meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible' />
-		<title>Uzungöl Zeen Lounge Cafe Restaurant</title>	
-		
-		<link rel="shortcut icon" href="favicon.ico" />
-		<link rel="apple-touch-icon" href="images/favicon.png" />
-		
-		<link rel="stylesheet" href="css/maximage.css" type="text/css" media="screen" charset="utf-8" />
-		<link rel="stylesheet" href="css/styles.css" type="text/css" media="screen" charset="utf-8" />
-		
-		<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-		
-		<!--[if IE 6]>
-			<style type="text/css" media="screen">
-				.gradient {display:none;}
-			</style>
-		<![endif]-->
-	</head>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-T9BHZYBETL"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-T9BHZYBETL');
-</script>
-	<body>
-
-		<!-- Social Links -->
-		
-		<nav class="social-nav">
-			<ul>
-				<li><a href="https://instagram.com/zeenlounge"><img src="images/icon-instagram.png" /></a></li>
-				<li><a href="https://www.facebook.com/zeenlounge"><img src="images/icon-facebook.png" /></a></li>
-				<li><a href="https://twitter.com/zeenlounge"><img src="images/icon-twitter.png" /></a></li>
-				<li><a href="https://api.whatsapp.com/send?phone=+905324959336&text=Merhaba%21%20"><img src="images/icon-whatsapp.png" /></a></li>
-				<li><a href="https://www.tiktok.com/@zeenlounge?"><img src="images/icon-tiktok.png" /></a></li>
-				<li><a href="#"><img src="images/icon-youtube.png" /></a></li>
-				<li><a href="https://g.page/zeenlounge"><img src="images/icon-google-maps.png" /></a></li>
-			</ul>
-		</nav>
-
-		<!-- Switch to full screen -->
-		<button class="full-screen" onclick="$(document).toggleFullScreen()"></button>
-
-		<!-- Site Logo -->
-		<div id="logo">zeen lounge</div>
-		<div id="arrow-right"><img src="images/logo.png" alt="Zeen Logo" /></div>
-
-		<!-- Slider Controls -->
-		<a href="" id="arrow_left"><img src="images/arrow-left.png" alt="Slide Left" /></a>
-		<a href="" id="arrow_right"><img src="images/arrow-right.png" alt="Slide Right" /></a>
-
-		<!-- Home Page -->
-		<section class="content show" id="home">
-			<h1>Uzungöl Zeen Lounge Cafe Restaurant</h1>
-			<h5>Iletisim</h5>
-			<p>Email: <a href="mailto:info@zeenlounge.com">info@zeenlounge.com</a><br />
-				Tel<a href="tel:+90 462 666 5 666">+90 462 666 5 666</a><br /></p>
-				Whatsapp: <a href="https://api.whatsapp.com/send?phone=+905324959336&text=Merhaba%21%20">+90 532 495 93 36</a></p>
-			<p><a href="https://uzungol.net" rel="dofollow">Uzungöl</a> Mah. No:38<br />
-				Çaykara Trabzon</p>
-		</section>
-		
-		<!-- Background Slides -->
-		<div id="maximage">
-			<div>
-				<img src="images/backgrounds/bg-img-1.jpg" alt="" />
-				<img class="gradient" src="images/backgrounds/gradient.png" alt="" />
-			</div>
-			<div>
-				<img src="images/backgrounds/bg-img-2.jpg" alt="" />
-				<img class="gradient" src="images/backgrounds/gradient.png" alt="" />
-			</div>
-		</div>
-		
-		<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.js'></script>
-		<script src="js/jquery.easing.min.js" type="text/javascript" charset="utf-8"></script>
-		<script src="js/jquery.cycle.all.js" type="text/javascript" charset="utf-8"></script>
-		<script src="js/jquery.maximage.js" type="text/javascript" charset="utf-8"></script>
-		<script src="js/jquery.fullscreen.js" type="text/javascript" charset="utf-8"></script>
-		<script src="js/jquery.ba-hashchange.js" type="text/javascript" charset="utf-8"></script>
-		<script src="js/main.js" type="text/javascript" charset="utf-8"></script>
-		
-		<script type="text/javascript" charset="utf-8">
-			$(function(){
-				$('#maximage').maximage({
-					cycleOptions: {
-						fx: 'fade',
-						speed: 1000, // Has to match the speed for CSS transitions in jQuery.maximage.css (lines 30 - 33)
-						timeout: 5000,
-						prev: '#arrow_left',
-						next: '#arrow_right',
-						pause: 0,
-						before: function(last,current){
-							if(!$.browser.msie){
-								// Start HTML5 video when you arrive
-								if($(current).find('video').length > 0) $(current).find('video')[0].play();
-							}
-						},
-						after: function(last,current){
-							if(!$.browser.msie){
-								// Pauses HTML5 video when you leave it
-								if($(last).find('video').length > 0) $(last).find('video')[0].pause();
-							}
-						}
-					},
-					onFirstImageLoaded: function(){
-						jQuery('#cycle-loader').hide();
-						jQuery('#maximage').fadeIn('fast');
-					}
-				});
-	
-				// Helper function to Fill and Center the HTML5 Video
-				jQuery('video,object').maximage('maxcover');
-	
-			});
-		</script>
-  </body>
-</html>
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Zeen Lounge Cafe | Uzungöl, Trabzon</title>
+<meta name="description" content="Zeen Lounge Cafe — Uzungöl, Trabzon’da cafe ve restoran. Mekânımızı, lezzetlerimizi ve ziyaret bilgilerini keşfedin. +90 532 495 93 36."><meta name="theme-color" content="#df3028">
+<link rel="canonical" href="https://zeenlounge.com/"><meta property="og:type" content="website"><meta property="og:locale" content="tr_TR"><meta property="og:site_name" content="Zeen Lounge Cafe"><meta property="og:title" content="Zeen Lounge Cafe | Uzungöl, Trabzon"><meta property="og:description" content="Zeen Lounge Cafe — Uzungöl, Trabzon’da cafe ve restoran. Mekânımızı, lezzetlerimizi ve ziyaret bilgilerini keşfedin. +90 532 495 93 36."><meta property="og:url" content="https://zeenlounge.com/">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg"><link rel="preload" as="image" href="assets/images/hero.webp"><link rel="preload" as="font" href="assets/fonts/manrope-400-normal.ttf" type="font/ttf" crossorigin>
+<link rel="stylesheet" href="assets/fonts.css"><link rel="stylesheet" href="assets/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "CafeOrCoffeeShop", "@id": "https://zeenlounge.com/#business", "name": "Zeen Lounge Cafe", "url": "https://zeenlounge.com/", "telephone": "+905324959336", "image": "https://zeenlounge.com/assets/images/hero.webp", "address": {"@type": "PostalAddress", "streetAddress": "Uzungöl, Fevzi Çakmak Caddesi No:38", "addressLocality": "Çaykara", "addressRegion": "Trabzon", "postalCode": "61960", "addressCountry": "TR"}, "geo": {"@type": "GeoCoordinates", "latitude": 40.6183263, "longitude": 40.2932416}, "hasMap": "https://www.google.com/maps?cid=5926369928969628008", "openingHoursSpecification": [{"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"], "opens": "08:00", "closes": "02:00"}], "sameAs": ["https://www.google.com/maps?cid=5926369928969628008", "https://www.instagram.com/zeenlounge/"], "email": "info@zeenlounge.com"}</script>
+<script src="assets/site.js" defer></script>
+</head>
+<body class="lounge" id="top">
+<a class="skip-link" href="#main">İçeriğe geç</a>
+<header class="header">
+ <a class="brand" href="#top" aria-label="Zeen Lounge Cafe — ana sayfa"><span class="brand-mark" aria-hidden="true"><img src="assets/images/logo-original.jpg" alt="" width="1080" height="1080"></span><span><span class="brand-word">zeen</span><span class="brand-name">Lounge Cafe</span></span></a>
+ <nav class="desktop-nav" aria-label="Ana menü"><a href="#atmosfer">Zeen’de</a><a href="#lezzetler">Lezzetler</a><a href="#galeri">Galeri</a><a href="#iletisim">Bizi bulun</a></nav>
+ <div class="header-right"><a class="branch-link" href="https://zeenpremium.com/">DİĞER ADRESİMİZ<strong>Zeen Premium ↗</strong></a><a class="button" href="#iletisim">Bize ulaşın <span class="arrow" aria-hidden="true">↗</span></a><button class="menu-toggle" aria-label="Menüyü aç" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span></button></div>
+</header>
+<nav class="mobile-nav" id="mobile-menu" aria-label="Mobil menü" hidden><a href="#atmosfer">Zeen’de</a><a href="#lezzetler">Lezzetler</a><a href="#galeri">Galeri</a><a href="#iletisim">Bizi bulun</a><a href="https://zeenpremium.com/">Diğer adresimiz: Zeen Premium ↗</a></nav>
+<main id="main">
+ <!-- 01 · AÇILIŞ — Başlıkları ve giriş metnini buradan düzenleyin. -->
+ <section class="hero" aria-label="Zeen Lounge Cafe">
+  <div class="hero-copy"><p class="eyebrow red">Uzungöl / Trabzon</p><h1>Biraz yavaşla.<span class="serif">Zeen’desin.</span></h1><p class="hero-description">Uzungöl’ün manzarası, sofranın lezzeti, sohbetin keyfi. Güzel bir günün bütün nedenleri aynı yerde.</p><div class="hero-actions"><a class="button" href="#atmosfer">Zeen’i keşfet <span class="arrow" aria-hidden="true">↗</span></a><a class="text-link" href="https://www.google.com/maps/dir/?api=1&destination=40.6183263%2C40.2932416" target="_blank" rel="noopener noreferrer">Yol tarifi al <span class="arrow" aria-hidden="true">↗</span></a></div><p class="hero-foot">UZUNGÖL’DE, GÖLÜN HEMEN KIYISINDA</p></div>
+  <figure class="hero-media"><img class="hero-photo" src="assets/images/hero.webp" alt="Uzungöl Zeen Lounge Cafe’nin dağların önündeki aydınlık dış cephesi" fetchpriority="high" width="1024" height="577"><span class="hero-tag">Göl kıyısında bir mola</span><figcaption class="photo-caption"><span>ZEEN LOUNGE CAFE<strong>Manzaraya bir masa ayır.</strong></span><span>UZUNGÖL<br>40° N · 40° E</span></figcaption></figure>
+  <a class="hero-orbit" href="#atmosfer" aria-label="Zeen atmosferini keşfet"><svg viewBox="0 0 120 120" aria-hidden="true"><defs><path id="circle-text" d="M60,60 m-44,0 a44,44 0 1,1 88,0 a44,44 0 1,1 -88,0"/></defs><text><textPath href="#circle-text">BİRAZ DAHA KAL · ZEEN’DE BULUŞALIM · </textPath></text></svg><span aria-hidden="true">↓</span></a>
+  <button class="motion-control" type="button" aria-pressed="false">Hareketi durdur</button>
+ </section>
+ <div class="marquee" aria-hidden="true"><div class="marquee-track"><div class="marquee-group"><span>UZUNGÖL</span><i>✳</i><span>Güzel anlar, birlikte.</span><i>✳</i><span>CAFE & RESTAURANT</span><i>✳</i><span>Biraz daha kal.</span><i>✳</i></div><div class="marquee-group"><span>UZUNGÖL</span><i>✳</i><span>Güzel anlar, birlikte.</span><i>✳</i><span>CAFE & RESTAURANT</span><i>✳</i><span>Biraz daha kal.</span><i>✳</i></div></div></div>
+ <!-- 02 · MEKÂN -->
+ <div class="wrap"><section id="atmosfer" class="intro"><div class="section-id reveal"><span>01 /</span><p class="eyebrow">ZEEN’DE OLMAK</p></div><div class="reveal"><h2>Bazı yerler sadece bir durak değil, <span class="serif">günün en güzel anıdır.</span></h2><div class="intro-bottom"><p>Göl kenarında uzayan bir kahvaltı, yürüyüş sonrası bir kahve, sevdiklerinizle paylaşılan bir sofra. Zeen Lounge Cafe, Uzungöl’ün doğal ritmine eşlik eden buluşma noktanız.</p><a class="text-link" href="#galeri">İçeri bir göz atın <span class="arrow" aria-hidden="true">↗</span></a></div></div></section><div class="detail-strip reveal"><div><span class="detail-number">01</span><div><h3>Göl kıyısında</h3><p>Uzungöl, Trabzon</p></div></div><div><span class="detail-number">02</span><div><h3>Gün boyu lezzet</h3><p>Kahvaltıdan akşam yemeğine</p></div></div><div><span class="detail-number">03</span><div><h3>Birlikte güzel</h3><p>İç ve dış mekân</p></div></div></div></div>
+ <!-- 03 · LEZZETLER — Fiyat listesi değildir. Güncel menü bağlantısı varsa menu-note içine ekleyin. -->
+ <section class="flavors wrap" id="lezzetler"><div class="section-heading reveal"><div><p class="eyebrow red">02 / SOFRAMIZDAN</p><h2>Her anın<br><span class="serif">bir lezzeti var.</span></h2></div><p>Uzayan kahvaltılardan paylaşılan tabaklara. Sofrada herkese güzel bir neden var.</p></div>
+ <div class="flavor-layout"><div class="flavor-image reveal" id="flavor-panel" role="tabpanel" aria-labelledby="flavor-0" tabindex="0"><img id="flavor-photo" src="assets/images/breakfast.webp" alt="Zeen Lounge Cafe’de serpme kahvaltı sofrası" loading="lazy" width="800" height="850"><span class="image-label" id="flavor-label">KAHVALTI SOFRASI</span></div><div class="flavor-content reveal"><div class="flavor-tabs" role="tablist" aria-label="Lezzet kategorileri" aria-orientation="vertical"><button class="flavor-tab" id="flavor-0" role="tab" aria-selected="true" aria-controls="flavor-panel" tabindex="0" data-image="assets/images/breakfast.webp" data-alt="Zeen Lounge Cafe’de serpme kahvaltı sofrası" data-label="KAHVALTI SOFRASI"><span class="index">01</span><span><span class="tab-title">Kahvaltıyla başlasın.</span><span class="tab-description">Çaylar dolsun, sohbet uzasın. Güne Uzungöl’de, paylaşmanın keyfini çıkaracağınız bir sofrada başlayın.</span></span><span class="arrow" aria-hidden="true">↗</span></button><button class="flavor-tab" id="flavor-1" role="tab" aria-selected="false" aria-controls="flavor-panel" tabindex="-1" data-image="assets/images/kitchen.webp" data-alt="Zeen Lounge Cafe’de et ve pilav tabağı" data-label="MUTFAĞIMIZDAN"><span class="index">02</span><span><span class="tab-title">Sofrayı paylaşalım.</span><span class="tab-description">Öğle molasından akşam buluşmasına; sıcak tabaklar ve tanıdık lezzetlerle masanın etrafında bir araya gelin.</span></span><span class="arrow" aria-hidden="true">↗</span></button><button class="flavor-tab" id="flavor-2" role="tab" aria-selected="false" aria-controls="flavor-panel" tabindex="-1" data-image="assets/images/mezze.webp" data-alt="Zeen Lounge Cafe mutfağından sıcak meze tabağı" data-label="PAYLAŞILAN LEZZETLER"><span class="index">03</span><span><span class="tab-title">Bir tabak daha.</span><span class="tab-description">Sofranın ortasına gelen tabaklar, birlikte geçirilen zamana eşlik etsin. Zeen mutfağından lezzetleri keşfedin.</span></span><span class="arrow" aria-hidden="true">↗</span></button></div><p class="menu-note">Güncel menü ve fiyatlar için <a href="tel:+905324959336">bize ulaşın</a>.</p></div></div></section>
+ <section class="atmosphere-band"><div class="band-photo"><img src="assets/images/table.webp" alt="Zeen Lounge Cafe’de markalı servis altlığıyla hazırlanmış yemek masası" loading="lazy" width="900" height="900"><span class="image-label">UZUNGÖL · ZEEN LOUNGE CAFE</span></div><div class="band-copy reveal"><p class="eyebrow">MANZARA KADAR GÜZEL ANLAR</p><h2>Acelesi olmayan<br>bir <span class="serif">buluşma.</span></h2><p>Uzungöl’ü keşfederken küçük bir ara verin. Masada sevdikleriniz, etrafınızda Karadeniz’in doğası; günün geri kalanı biraz bekleyebilir.</p><a class="text-link" href="#iletisim">Zeen’de buluşalım <span class="arrow" aria-hidden="true">↗</span></a></div></section>
+ <!-- 04 · GALERİ — assets/images klasöründeki fotoğrafları değiştirebilirsiniz. -->
+ <section class="gallery wrap" id="galeri"><div class="section-heading reveal"><div><p class="eyebrow red">03 / KADRAJIMIZDAN</p><h2>Biraz mekân.<br><span class="serif">Biraz Zeen.</span></h2></div><p>Güzel anlara yakından bakın.<br>Gerisini geldiğinizde keşfedin.</p></div><div class="gallery-grid"><button class="gallery-item reveal" data-gallery="0" aria-label="Fotoğrafı büyüt: Göl kıyısındaki adresimiz"><span class="image-wrap"><img src="assets/images/hero.webp" alt="Zeen Lounge Cafe’nin Uzungöl’deki dış cephesi" loading="lazy" width="800" height="1000"><span class="zoom" aria-hidden="true">+</span></span><span class="caption"><span>Göl kıyısındaki adresimiz</span><b>01</b></span></button><button class="gallery-item reveal" data-gallery="1" aria-label="Fotoğrafı büyüt: Güne güzel bir başlangıç"><span class="image-wrap"><img src="assets/images/breakfast.webp" alt="Zeen Lounge Cafe kahvaltı sofrası" loading="lazy" width="800" height="1000"><span class="zoom" aria-hidden="true">+</span></span><span class="caption"><span>Güne güzel bir başlangıç</span><b>02</b></span></button><button class="gallery-item reveal" data-gallery="2" aria-label="Fotoğrafı büyüt: Sofradan bir detay"><span class="image-wrap"><img src="assets/images/table.webp" alt="Zeen Lounge Cafe yemek sunumu" loading="lazy" width="800" height="1000"><span class="zoom" aria-hidden="true">+</span></span><span class="caption"><span>Sofradan bir detay</span><b>03</b></span></button></div><div class="gallery-footer"><a class="text-link" href="https://www.google.com/maps/contrib/108678498548067148254/photos/" target="_blank" rel="noopener noreferrer">Google’da daha fazla fotoğraf <span class="arrow" aria-hidden="true">↗</span></a></div></section>
+ <!-- 05 · İLETİŞİM — Adres, telefon veya saat değiştiğinde üstteki JSON-LD verisini de güncelleyin. -->
+ <section class="visit" id="iletisim"><div class="wrap"><div class="visit-top reveal"><div><p class="eyebrow">04 / SİZİ BEKLİYORUZ</p><h2>Yolunuz<br><span class="serif">Zeen’e düşsün.</span></h2></div><span class="visit-arrow" aria-hidden="true">↗</span></div><div class="visit-grid"><div class="reveal"><p class="visit-label">Zeen Lounge Cafe · Uzungöl</p><address>Uzungöl, Fevzi Çakmak Caddesi No:38<br>61960 Çaykara / Trabzon</address><a class="text-link" href="https://www.google.com/maps/dir/?api=1&destination=40.6183263%2C40.2932416" target="_blank" rel="noopener noreferrer">Google Haritalar’da yol tarifi <span class="arrow" aria-hidden="true">↗</span></a></div><div class="reveal"><p class="visit-label">Çalışma saatleri</p><p class="hours">Her gün<br>08.00 — 02.00</p><p class="note">Ziyaretiniz öncesinde güncel saatleri <a href="https://www.google.com/maps?cid=5926369928969628008" target="_blank" rel="noopener noreferrer"><u>Google’dan kontrol edin</u></a>.</p></div><div class="reveal"><p class="visit-label">Bilgi & rezervasyon</p><a class="phone" href="tel:+905324959336">+90 532 495 93 36</a><a href="mailto:info@zeenlounge.com">info@zeenlounge.com</a><br><a class="button" href="https://wa.me/905324959336?text=Merhaba%2C%20Zeen%20Lounge%20Cafe%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener noreferrer">WhatsApp’tan yazın <span class="arrow" aria-hidden="true">↗</span></a></div></div></div></section>
+ <section class="sister wrap" aria-label="Diğer şubemiz"><a class="sister-image reveal" href="https://zeenpremium.com/" aria-label="Zeen Premium web sitesi"><img src="assets/images/sister.webp" alt="Zeen Premium dış cephesi" loading="lazy" width="1024" height="700"></a><div class="reveal"><p class="eyebrow red">İKİ ADRES. AYNI ZEEN RUHU.</p><h2>Bir de <span class="serif">Yalıncak’ta</span><br>buluşalım.</h2><p>Aynı Zeen ruhunu şehrin ritmiyle buluşturun. Trabzon Yalıncak’taki diğer adresimizle tanışın.</p><a class="text-link" href="https://zeenpremium.com/">Zeen Premium’u keşfet <span class="arrow" aria-hidden="true">↗</span></a></div></section>
+</main>
+<footer class="footer wrap"><div class="footer-top"><a class="brand" href="#top" aria-label="Zeen Lounge Cafe — sayfa başı"><span class="brand-mark" aria-hidden="true"><img src="assets/images/logo-original.jpg" alt="" width="1080" height="1080"></span><span><span class="brand-word">zeen</span><span class="brand-name">Lounge Cafe</span></span></a><div class="footer-links"><a href="https://www.instagram.com/zeenlounge/" target="_blank" rel="noopener noreferrer">Instagram ↗</a><a href="https://zeenpremium.com/">Zeen Premium ↗</a></div></div><div class="footer-small"><span>© <span id="year">2026</span> Zeen Lounge Cafe. Tüm hakları saklıdır.</span><a class="back-top" href="#top">Başa dön <span aria-hidden="true">↑</span></a></div><div class="footer-word" aria-hidden="true">zeen</div></footer>
+<div class="mobile-contact" aria-label="Hızlı iletişim"><a href="tel:+905324959336">Bizi arayın <span aria-hidden="true">↗</span></a><a href="https://www.google.com/maps/dir/?api=1&destination=40.6183263%2C40.2932416" target="_blank" rel="noopener noreferrer">Yol tarifi al <span aria-hidden="true">↗</span></a></div>
+<dialog class="lightbox" aria-label="Fotoğraf galerisi"><div class="lightbox-inner"><div class="lightbox-top"><span>ZEEN LOUNGE CAFE / GALERİ</span><button type="button" class="lightbox-close" aria-label="Galeriyi kapat">×</button></div><img id="lightbox-photo" src="assets/images/hero.webp" alt="Zeen Lounge Cafe’nin Uzungöl’deki dış cephesi"><div class="lightbox-bottom"><p id="lightbox-caption" aria-live="polite"></p><div class="lightbox-controls"><button class="round-button lightbox-prev" aria-label="Önceki fotoğraf">←</button><button class="round-button lightbox-next" aria-label="Sonraki fotoğraf">→</button></div></div></div></dialog>
+<noscript><style>.flavor-tabs [aria-selected=false] .tab-description{display:block}.menu-toggle,.motion-control,.hero-orbit{display:none}.desktop-nav{display:flex;flex-wrap:wrap;font-size:11px;gap:12px}.header{height:auto;min-height:78px;flex-wrap:wrap;padding-block:15px}.gallery-item .zoom{display:none}</style></noscript>
+</body></html>
